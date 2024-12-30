@@ -12,12 +12,13 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "http://localhost:5000/api/insert",
-					"protocol": "http",
+					"raw": "https://ow-backend-assign.onrender.com/api/insert",
+					"protocol": "https",
 					"host": [
-						"localhost"
+						"ow-backend-assign",
+						"onrender",
+						"com"
 					],
-					"port": "5000",
 					"path": [
 						"api",
 						"insert"
@@ -32,12 +33,13 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "http://localhost:5000/api/user/676ef3f87ffe0fd765f2afa6",
-					"protocol": "http",
+					"raw": "https://ow-backend-assign.onrender.com/api/user/676ef3f87ffe0fd765f2afa6",
+					"protocol": "https",
 					"host": [
-						"localhost"
+						"ow-backend-assign",
+						"onrender",
+						"com"
 					],
-					"port": "5000",
 					"path": [
 						"api",
 						"user",
@@ -53,12 +55,13 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "http://localhost:5000/api/transactions/user/676ef3f87ffe0fd765f2afa6?status=success&from=2024-12-27&to=2024-12-31&type=credit&page=1",
-					"protocol": "http",
+					"raw": "https://ow-backend-assign.onrender.com/api/transactions/user/676ef3f87ffe0fd765f2afa6?status=success&from=2024-12-27&to=2025-01-14&type=credit&page=1",
+					"protocol": "https",
 					"host": [
-						"localhost"
+						"ow-backend-assign",
+						"onrender",
+						"com"
 					],
-					"port": "5000",
 					"path": [
 						"api",
 						"transactions",
@@ -76,7 +79,7 @@
 						},
 						{
 							"key": "to",
-							"value": "2024-12-31"
+							"value": "2025-01-14"
 						},
 						{
 							"key": "type",
@@ -97,12 +100,13 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "http://localhost:5000/api/transactions?status=success&type=credit&page=2&from=2024-12-27&to=2024-12-31",
-					"protocol": "http",
+					"raw": "https://ow-backend-assign.onrender.com/api/transactions?status=success&type=credit&page=2&from=2024-12-27&to=2025-01-14",
+					"protocol": "https",
 					"host": [
-						"localhost"
+						"ow-backend-assign",
+						"onrender",
+						"com"
 					],
-					"port": "5000",
 					"path": [
 						"api",
 						"transactions"
@@ -126,7 +130,7 @@
 						},
 						{
 							"key": "to",
-							"value": "2024-12-31"
+							"value": "2025-01-14"
 						}
 					]
 				}
