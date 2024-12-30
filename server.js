@@ -35,3 +35,10 @@ app.listen(PORT, (err) => {
   }
   console.log(`Server running on port ${PORT}`);
 });
+
+// initial req 
+app.get("/", async(req,res)=>{
+   res.send({
+   message: "server is running"
+   });
+})
