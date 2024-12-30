@@ -1,0 +1,137 @@
+{
+	"info": {
+		"_postman_id": "a7452637-01c8-47b8-95d9-67b80cce47b7",
+		"name": "orbit-wallet-assignment",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "25385175"
+	},
+	"item": [
+		{
+			"name": "insert entries",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5000/api/insert",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"insert"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get user by id",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5000/api/user/676ef3f87ffe0fd765f2afa6",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"user",
+						"676ef3f87ffe0fd765f2afa6"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get user transactions by userId",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5000/api/transactions/user/676ef3f87ffe0fd765f2afa6?status=success&from=2024-12-27&to=2024-12-31&type=credit&page=1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"transactions",
+						"user",
+						"676ef3f87ffe0fd765f2afa6"
+					],
+					"query": [
+						{
+							"key": "status",
+							"value": "success"
+						},
+						{
+							"key": "from",
+							"value": "2024-12-27"
+						},
+						{
+							"key": "to",
+							"value": "2024-12-31"
+						},
+						{
+							"key": "type",
+							"value": "credit"
+						},
+						{
+							"key": "page",
+							"value": "1"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get all transactions with user details",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5000/api/transactions?status=success&type=credit&page=2&from=2024-12-27&to=2024-12-31",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"transactions"
+					],
+					"query": [
+						{
+							"key": "status",
+							"value": "success"
+						},
+						{
+							"key": "type",
+							"value": "credit"
+						},
+						{
+							"key": "page",
+							"value": "2"
+						},
+						{
+							"key": "from",
+							"value": "2024-12-27"
+						},
+						{
+							"key": "to",
+							"value": "2024-12-31"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
