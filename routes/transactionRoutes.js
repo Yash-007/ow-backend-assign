@@ -39,7 +39,7 @@ router.get("/user/:userId?", async (req, res) => {
       totalTransactions: total
     });
   } catch (err) {
-    res.status(500).json({ message: err.message });
+    res.status(500).json({ message: "Internal Server Error" });
   }
 });
 
@@ -100,7 +100,7 @@ router.get("/", async (req, res) => {
       }
     });
   } catch (err) {
-    res.status(500).json({ message: err.message });
+    res.status(500).json({ message: "Internal Server Error" });
   }
 });
 
