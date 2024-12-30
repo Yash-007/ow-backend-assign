@@ -6,6 +6,7 @@ const Transaction = require("../models/transaction.js");
 // insert users and transactions    /api/insert
 router.get("/", async (req, res) => {
   try {
+    // delete existing and add new
     await User.deleteMany({});
     await Transaction.deleteMany({});
 
